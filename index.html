@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VVS Authority Pro Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="lockScreen" class="lock hidden">
+    <div class="lock-card">
+      <h1>VVS Authority Admin</h1>
+      <p>Enter admin password</p>
+      <input id="passwordInput" type="password" placeholder="Password"/>
+      <button id="loginBtn">Unlock Admin</button>
+      <small>Default password: vvs123</small>
+    </div>
+  </div>
+
+  <div class="app">
+    <aside class="brand-panel">
+      <img src="assets/vvs-brand-image.jpeg" alt="VVS Authority"/>
+      <div class="brand-overlay">
+        <h2>VVS Authority</h2>
+        <p>Lab Diamond Mystery Game</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header>
+        <div>
+          <h1>💎 Pick A Spot & Win 💎</h1>
+          <p id="viewLabel">Audience View</p>
+        </div>
+        <div class="header-buttons">
+          <button id="audienceBtn">Audience</button>
+          <button id="adminBtn">Admin</button>
+          <button id="obsBtn">OBS Clean</button>
+        </div>
+      </header>
+
+      <section class="rules">
+        <b>Transparent unlock rules:</b>
+        <span>Prizes with unlock percentages become active only after the board reaches that progress.</span>
+      </section>
+
+      <section class="stats">
+        <div><b id="totalSpots">300</b><span>Total</span></div>
+        <div><b id="drawn">0</b><span>Drawn</span></div>
+        <div><b id="remaining">300</b><span>Remaining</span></div>
+        <div><b id="complete">0%</b><span>Complete</span></div>
+      </section>
+
+      <section id="adminTools" class="admin-tools hidden">
+        <input id="buyerName" placeholder="Buyer name optional"/>
+        <button id="randomBtn">Random Spot</button>
+        <button id="undoBtn">Undo Last</button>
+        <button id="exportBtn">Export History</button>
+        <button id="editorBtn">Prize Editor</button>
+      </section>
+
+      <section class="board-card">
+        <div id="board" class="board"></div>
+      </section>
+
+      <section class="bottom">
+        <div class="panel">
+          <h2>Last Reveal</h2>
+          <div id="lastReveal">No prize revealed yet.</div>
+        </div>
+        <div class="panel">
+          <h2>Inventory</h2>
+          <div id="inventory"></div>
+        </div>
+        <div class="panel">
+          <h2>Draw History</h2>
+          <div id="history"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <section id="editor" class="editor hidden">
+    <div class="editor-card">
+      <button id="closeEditor" class="close">×</button>
+      <h2>Prize Editor</h2>
+      <p>Set prize names, quantities, color tiers, and unlock percentage. Save will rebuild and reshuffle the game.</p>
+      <label>Total spots</label>
+      <input id="spotCount" type="number" min="1" max="1000"/>
+      <div class="editor-head">
+        <b>Prize</b><b>Qty</b><b>Tier</b><b>Unlock %</b><b></b>
+      </div>
+      <div id="prizeRows"></div>
+      <div class="editor-actions">
+        <button id="addPrizeBtn">Add Prize</button>
+        <button id="saveGameBtn">Save & Build Game</button>
+        <button id="resetBtn" class="danger">Reset & Reshuffle</button>
+        <button id="changePassBtn">Change Password</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="revealModal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <div id="bangerText" class="banger hidden">BANGER ALERT</div>
+      <div class="diamond">💎</div>
+      <h2 id="modalSpot"></h2>
+      <h1 id="modalPrize"></h1>
+      <p id="modalBuyer"></p>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
