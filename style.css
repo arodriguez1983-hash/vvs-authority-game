@@ -683,7 +683,7 @@ h1{
 }
 
 .stats div{
-  padding:9px !important;
+  padding:6px !important;
 }
 
 .stats b{
@@ -697,26 +697,25 @@ h1{
 }
 
 .spot{
-  aspect-ratio:1.55 / 1 !important;
+  aspect-ratio:2.3 / 1 !important;
   min-height:0 !important;
   height:auto !important;
   padding:0 !important;
-  font-size:21px !important;
+  font-size:18px !important;
 }
 
 .bottom-panels{
   display:grid !important;
   grid-template-columns:1fr 1fr 1fr !important;
   gap:8px !important;
-  margin-top:10px !important;
+  margin-top:4px !important;
 }
 
 .panel{
-  height:170px !important;
+  height:130px !important;
   min-height:0 !important;
   overflow:auto !important;
 }
-
 .panel h2{
   font-size:18px !important;
 }
