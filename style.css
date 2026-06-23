@@ -485,11 +485,12 @@ h1{
 }
 
 .spot{
-  aspect-ratio:1 / 1;
-  min-height:0 !important;
-  height:auto !important;
+  aspect-ratio:auto !important;
+  min-height:42px !important;
+  height:42px !important;
   padding:0 !important;
   font-size:15px;
+}
 }
 .stats div{
   padding:4px;
