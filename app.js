@@ -6,7 +6,7 @@ const DEFAULT_PRIZES = [
   { name:"0.10 CT LAB DIAMOND", qty:10, tier:"gold", unlock:25 },
   { name:"2.80MM LAB DIAMOND", qty:20, tier:"orange", unlock:0 },
   { name:"2.40MM LAB DIAMOND", qty:40, tier:"green", unlock:0 },
-  { name:"2.00MM LAB DIAMOND", qty:219, tier:"red", unlock:0 }
+  { name:"2.00MM LAB DIAMOND", qty:19, tier:"red", unlock:0 }
 ];
 
 let settings = loadSettings();
@@ -16,9 +16,9 @@ let adminMode = false;
 
 function loadSettings() {
   try {
-    return JSON.parse(localStorage.getItem("vvs_pro_settings")) || { totalSpots:300, password:"vvs123", prizes:DEFAULT_PRIZES };
+    return JSON.parse(localStorage.getItem("vvs_pro_settings")) || { totalSpots:100, password:"Aria1217!", prizes:DEFAULT_PRIZES };
   } catch {
-    return { totalSpots:300, password:"vvs123", prizes:DEFAULT_PRIZES };
+    return { totalSpots:100, password:"vvs123", prizes:DEFAULT_PRIZES };
   }
 }
 function saveSettings() { localStorage.setItem("vvs_pro_settings", JSON.stringify(settings)); }
