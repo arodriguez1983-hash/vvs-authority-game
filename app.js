@@ -117,11 +117,25 @@ function revealSpot(spot) {
 }
 
 function showReveal(record) {
-  document.getElementById("modalSpot").textContent = `Spot #${record.spot}`;
-  document.getElementById("modalPrize").textContent = record.prize.name;
-  document.getElementById("modalBuyer").textContent = record.buyer ? `Buyer: ${record.buyer}` : "";
-  document.getElementById("bangerText").classList.toggle("hidden", record.prize.tier !== "mega");
+  document.getElementById("modalSpot").textContent =
+    "💎 VVS AUTHORITY 💎  •  SPOT #" + record.spot;
+
+  document.getElementById("modalPrize").textContent =
+    "🏆 " + record.prize.name;
+
+  document.getElementById("modalBuyer").textContent =
+    record.buyer ? "Congratulations " + record.buyer + "!" : "Congratulations!";
+
+  if (record.prize.tier === "mega") {
+    document.getElementById("bangerText").textContent =
+      "🚨 BANGER ALERT 🚨";
+    document.getElementById("bangerText").classList.remove("hidden");
+  } else {
+    document.getElementById("bangerText").classList.add("hidden");
+  }
+
   document.getElementById("revealModal").classList.remove("hidden");
+
 }
 
 function render() {
