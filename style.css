@@ -570,3 +570,38 @@ header{
     opacity:1;
   }
 }
+#modalPrize{
+    animation: prizeGlow .7s infinite alternate;
+}
+
+@keyframes prizeGlow{
+    from{
+        text-shadow:
+            0 0 15px gold,
+            0 0 30px gold;
+    }
+    to{
+        text-shadow:
+            0 0 20px gold,
+            0 0 50px gold,
+            0 0 80px gold;
+    }
+}
+#modalPrize{
+    animation: prizeGlow .7s infinite alternate;
+}
+
+@keyframes prizeGlow{
+    from{
+        text-shadow:
+            0 0 15px gold,
+            0 0 30px gold;
+    }
+
+    to{
+        text-shadow:
+            0 0 20px gold,
+            0 0 50px gold,
+            0 0 80px gold;
+    }
+}
