@@ -312,17 +312,29 @@ input, select {
   place-items:center;
 }
 .diamond { font-size:80px; }
-.banger {
+.banger{
   color:#ffdd64;
-  font-size:44px;
+  font-size:60px;
   font-weight:900;
-  text-shadow:0 0 20px rgba(255,221,100,.8);
-  animation:pulse .65s infinite alternate;
+  letter-spacing:2px;
+  margin-bottom:20px;
+  text-shadow:
+      0 0 10px gold,
+      0 0 20px gold,
+      0 0 40px gold,
+      0 0 80px gold;
+  animation:pulse .5s infinite alternate;
 }
-@keyframes pulse {
-  from { transform:scale(1); }
-  to { transform:scale(1.08); }
 }
+@keyframes pulse{
+  0%{
+    transform:scale(1);
+  }
+
+  100%{
+    transform:scale(1.15);
+  }
+}}
 .modal-card h2 {
   color:var(--gold);
   margin:0;
