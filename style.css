@@ -424,3 +424,57 @@ h1{
   min-height:120px;
   padding:10px;
 }
+.app{
+  grid-template-columns:230px 1fr;
+  height:100vh;
+  overflow:hidden;
+}
+
+.main{
+  padding:8px;
+  height:100vh;
+  overflow:hidden;
+}
+
+header{
+  padding:8px 12px;
+}
+
+h1{
+  font-size:34px;
+}
+
+.stats{
+  gap:6px;
+  margin:6px 0;
+}
+
+.stats div{
+  padding:6px;
+}
+
+.stats b{
+  font-size:26px;
+}
+
+.board{
+  display:grid;
+  grid-template-columns:repeat(10, 1fr);
+  gap:3px;
+}
+
+.spot{
+  min-height:43px;
+  font-size:16px;
+  border-radius:5px;
+}
+
+.bottom-panels{
+  margin-top:6px;
+  gap:6px;
+}
+
+.panel{
+  min-height:95px;
+  padding:8px;
+}
