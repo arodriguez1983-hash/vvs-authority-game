@@ -546,7 +546,7 @@ header{
 }
 
 #modalPrize{
-  font-size:72px;
+  font-size:90px;
   line-height:1.05;
   color:#ffdd64;
   text-shadow:
@@ -555,7 +555,7 @@ header{
 }
 
 #modalBuyer{
-  font-size:34px;
+  display:none;
   margin-top:20px;
   color:white;
 }
