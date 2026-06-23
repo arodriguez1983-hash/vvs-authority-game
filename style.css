@@ -605,3 +605,26 @@ header{
             0 0 80px gold;
     }
 }
+.banger{
+    color:#ff4444;
+    font-size:54px;
+    font-weight:900;
+    text-align:center;
+    margin-bottom:20px;
+    animation:bangerFlash .5s infinite alternate;
+    text-shadow:
+        0 0 10px red,
+        0 0 25px red,
+        0 0 50px orange;
+}
+
+@keyframes bangerFlash{
+    from{
+        opacity:1;
+        transform:scale(1);
+    }
+    to{
+        opacity:.7;
+        transform:scale(1.08);
+    }
+}

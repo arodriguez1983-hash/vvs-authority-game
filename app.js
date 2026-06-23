@@ -127,12 +127,19 @@ function showReveal(record) {
     record.buyer ? "Congratulations " + record.buyer + "!" : "Congratulations!";
 
   if (record.prize.tier === "mega") {
-    document.getElementById("bangerText").textContent =
-      "🚨 BANGER ALERT 🚨";
+    document.getElementById("bangerText").innerHTML =
+        "🚨 BANGER ALERT 🚨";
     document.getElementById("bangerText").classList.remove("hidden");
-  } else {
+
+    document.querySelector(".modal-card").style.background =
+        "radial-gradient(circle,#900 0%,#200 100%)";
+
+} else {
     document.getElementById("bangerText").classList.add("hidden");
-  }
+
+    document.querySelector(".modal-card").style.background =
+        "linear-gradient(180deg,#450010,#000)";
+}
 
   document.getElementById("revealModal").classList.remove("hidden");
 
