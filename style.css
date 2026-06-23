@@ -628,3 +628,26 @@ header{
         transform:scale(1.08);
     }
 }
+@keyframes screenShake{
+    0% {transform:translate(0);}
+    20% {transform:translate(-5px,5px);}
+    40% {transform:translate(5px,-5px);}
+    60% {transform:translate(-5px,-5px);}
+    80% {transform:translate(5px,5px);}
+    100% {transform:translate(0);}
+}
+
+.shake{
+    animation:screenShake .3s 4;
+}
+.shake{
+    animation: shake .15s linear infinite;
+}
+
+@keyframes shake{
+    0%   { transform: translate(2px,0); }
+    25%  { transform: translate(-2px,2px); }
+    50%  { transform: translate(2px,-2px); }
+    75%  { transform: translate(-2px,0); }
+    100% { transform: translate(2px,2px); }
+}

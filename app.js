@@ -133,6 +133,16 @@ function showReveal(record) {
 
     document.querySelector(".modal-card").style.background =
         "radial-gradient(circle,#900 0%,#200 100%)";
+confetti({
+    particleCount: 300,
+    spread: 120,
+    origin: { y: 0.6 }
+});
+document.querySelector(".modal-card").classList.add("shake");
+
+setTimeout(() => {
+    document.querySelector(".modal-card").classList.remove("shake");
+}, 1200);
 
 } else {
     document.getElementById("bangerText").classList.add("hidden");
