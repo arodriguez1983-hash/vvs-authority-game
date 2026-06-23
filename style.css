@@ -479,19 +479,18 @@ h1{
   padding:8px;
 }
 .board{
-  height:420px;
-  grid-template-columns:repeat(10, 1fr);
-  grid-auto-rows:1fr;
+  display:grid;
+  grid-template-columns:repeat(10, minmax(0,1fr));
   gap:3px;
 }
 
 .spot{
+  aspect-ratio:1 / 1;
   min-height:0 !important;
   height:auto !important;
   padding:0 !important;
   font-size:15px;
 }
-
 .stats div{
   padding:4px;
 }
