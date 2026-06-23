@@ -651,3 +651,72 @@ header{
     75%  { transform: translate(-2px,0); }
     100% { transform: translate(2px,2px); }
 }
+/* Final square 10x10 board layout */
+.app{
+  grid-template-columns:190px 1fr !important;
+  height:100vh;
+  overflow:hidden;
+}
+
+.main{
+  padding:8px 12px !important;
+  height:100vh;
+  overflow:hidden;
+}
+
+.brand-panel{
+  width:190px;
+  height:100vh;
+}
+
+header{
+  padding:8px 14px !important;
+}
+
+h1{
+  font-size:34px !important;
+}
+
+.stats{
+  gap:8px !important;
+  margin:8px 0 !important;
+}
+
+.stats div{
+  padding:9px !important;
+}
+
+.stats b{
+  font-size:30px !important;
+}
+
+.board{
+  display:grid !important;
+  grid-template-columns:repeat(10, 1fr) !important;
+  gap:3px !important;
+}
+
+.spot{
+  aspect-ratio:1.55 / 1 !important;
+  min-height:0 !important;
+  height:auto !important;
+  padding:0 !important;
+  font-size:21px !important;
+}
+
+.bottom-panels{
+  display:grid !important;
+  grid-template-columns:1fr 1fr 1fr !important;
+  gap:8px !important;
+  margin-top:10px !important;
+}
+
+.panel{
+  height:170px !important;
+  min-height:0 !important;
+  overflow:auto !important;
+}
+
+.panel h2{
+  font-size:18px !important;
+}
