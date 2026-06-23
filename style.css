@@ -504,3 +504,22 @@ header{
   height:110px;
   overflow:hidden;
 }
+.bottom-panels{
+    gap:8px;
+}
+
+.panel{
+    min-height:140px;
+    max-height:140px;
+    overflow:auto;
+}
+
+.panel h2{
+    font-size:16px;
+    margin-bottom:8px;
+}
+
+.history-row,
+.row{
+    font-size:13px;
+}
