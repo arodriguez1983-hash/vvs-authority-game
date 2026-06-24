@@ -573,3 +573,64 @@ input,select{
     margin-top:8px;
   }
 }
+
+/* FORCE PHONE VERSION */
+@media only screen and (max-width: 768px){
+
+  .app{
+    display:block !important;
+    height:auto !important;
+    overflow:visible !important;
+  }
+
+  .brand-panel{
+    display:none !important;
+  }
+
+  .main{
+    display:block !important;
+    height:auto !important;
+    overflow:visible !important;
+    padding:8px !important;
+  }
+
+  header{
+    display:block !important;
+    height:auto !important;
+    text-align:center !important;
+    padding:10px !important;
+  }
+
+  h1{
+    font-size:28px !important;
+    line-height:1.1 !important;
+  }
+
+  .header-buttons{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:8px !important;
+    margin-top:10px !important;
+  }
+
+  .stats{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:8px !important;
+    margin:8px 0 !important;
+  }
+
+  .stats div{
+    height:70px !important;
+  }
+
+  .board{
+    grid-template-columns:repeat(10,1fr) !important;
+    gap:2px !important;
+  }
+
+  .spot{
+    height:30px !important;
+    font-size:12px !important;
+  }
+}
