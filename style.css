@@ -232,7 +232,7 @@ button{
   display:grid;
   grid-template-columns:1.2fr 1fr 1fr;
   gap:8px;
-  height:120px;
+  height:140px;
   overflow:hidden;
 }
 
