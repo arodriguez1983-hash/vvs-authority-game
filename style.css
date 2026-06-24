@@ -483,3 +483,93 @@ input,select{
 .editor-card h2{
     margin-bottom:10px !important;
 }
+/* PHONE LAYOUT ONLY */
+@media (max-width:768px){
+
+  body{
+    overflow:auto;
+  }
+
+  .app{
+    display:block;
+    height:auto;
+    overflow:visible;
+  }
+
+  .brand-panel{
+    display:none;
+  }
+
+  .main{
+    display:block;
+    height:auto;
+    padding:8px;
+    overflow:visible;
+  }
+
+  header{
+    height:auto;
+    display:block;
+    text-align:center;
+    padding:10px;
+  }
+
+  h1{
+    font-size:30px;
+    line-height:1.1;
+  }
+
+  .header-buttons{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+
+  button{
+    padding:10px;
+    font-size:13px;
+  }
+
+  .stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+    margin:8px 0;
+  }
+
+  .stats div{
+    height:75px;
+  }
+
+  .stats b{
+    font-size:26px;
+  }
+
+  .board-card{
+    padding:6px;
+  }
+
+  .board{
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    gap:2px;
+  }
+
+  .spot{
+    height:34px;
+    font-size:14px;
+    border-radius:5px;
+  }
+
+  .bottom,
+  .bottom-panels{
+    display:block;
+    height:auto;
+  }
+
+  .panel{
+    height:120px;
+    margin-top:8px;
+  }
+}
