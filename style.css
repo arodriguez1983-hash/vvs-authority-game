@@ -880,3 +880,21 @@ h1{
 .panel{
   height:110px !important;
 }
+/* Clean final right-side layout */
+.stats{
+  width:170px !important;
+  overflow:hidden !important;
+}
+
+.stats div{
+  width:150px !important;
+  height:78px !important;
+}
+
+.board{
+  margin-left:10px !important;
+}
+
+.bottom-panels{
+  display:none !important;
+}
