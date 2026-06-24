@@ -232,7 +232,7 @@ button{
   display:grid;
   grid-template-columns:1.2fr 1fr 1fr;
   gap:8px;
-  height:140px;
+  height:120px;
   overflow:hidden;
 }
 
@@ -634,4 +634,34 @@ input,select{
     height:30px !important;
     font-size:12px !important;
   }
+}
+
+/* Bottom boxes - no scrolling */
+#history,
+#inventory,
+#lastReveal{
+    height:100%;
+    overflow:hidden !important;
+}
+
+/* Inventory rows */
+.row{
+    font-size:11px !important;
+    padding:2px 0 !important;
+}
+
+/* History rows */
+.history-row{
+    font-size:10px !important;
+    padding:2px 0 !important;
+}
+
+/* Make bottom panels taller */
+.bottom,
+.bottom-panels{
+    height:150px !important;
+}
+
+.panel{
+    height:150px !important;
 }
