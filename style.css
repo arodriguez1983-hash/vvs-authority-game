@@ -788,7 +788,7 @@ h1{
 
 .main{
   display:grid !important;
-  grid-template-columns:260px 1fr !important;
+  grid-template-columns:180px 1fr !important;
   grid-template-rows:auto 1fr auto !important;
   gap:10px !important;
   padding:8px 12px !important;
