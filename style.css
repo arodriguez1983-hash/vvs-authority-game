@@ -811,7 +811,7 @@ header{
 }
 
 .stats div{
-  height:110px !important;
+  height:80px !important;
   padding:10px !important;
   display:flex !important;
   flex-direction:column !important;
@@ -820,7 +820,7 @@ header{
 }
 
 .stats b{
-  font-size:34px !important;
+  font-size:26px !important;
 }
 
 .board{
@@ -833,7 +833,7 @@ header{
 }
 
 .spot{
-  aspect-ratio:1.35 / 1 !important;
+  aspect-ratio:1.75 / 1 !important;
   min-height:0 !important;
   height:auto !important;
   padding:0 !important;
