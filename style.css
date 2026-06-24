@@ -659,9 +659,9 @@ input,select{
 /* Make bottom panels taller */
 .bottom,
 .bottom-panels{
-    height:210px !important;
+    height:250px !important;
 }
 
 .panel{
-    height:210px !important;
+    height:250px !important;
 }
