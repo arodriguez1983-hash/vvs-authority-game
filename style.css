@@ -863,3 +863,30 @@ header{
   font-size:14px !important;
   margin:2px 0 !important;
 }
+/* Fit right-side board on one screen */
+.main{
+  grid-template-rows:70px 560px 95px !important;
+}
+
+header{
+  height:70px !important;
+}
+
+.board{
+  align-self:stretch !important;
+}
+
+.spot{
+  aspect-ratio:auto !important;
+  height:53px !important;
+  min-height:0 !important;
+  font-size:16px !important;
+}
+
+.stats{
+  gap:8px !important;
+}
+
+.stats div{
+  height:95px !important;
+}
