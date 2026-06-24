@@ -825,3 +825,44 @@ header{
 .panel{
     height:115px !important;
 }
+/* Fix board overlap and fit */
+.main{
+  grid-template-columns:180px 1fr !important;
+  grid-template-rows:70px 535px 110px !important;
+  gap:8px !important;
+  padding:8px !important;
+  overflow:hidden !important;
+}
+
+header{
+  grid-column:1 / 3 !important;
+  grid-row:1 !important;
+}
+
+.stats{
+  grid-column:1 / 2 !important;
+  grid-row:2 !important;
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:8px !important;
+  margin:0 !important;
+}
+
+.board{
+  grid-column:2 / 3 !important;
+  grid-row:2 !important;
+  width:100% !important;
+  margin:0 !important;
+  transform:none !important;
+}
+
+.spot{
+  height:49px !important;
+  aspect-ratio:auto !important;
+  font-size:15px !important;
+}
+
+.bottom-panels{
+  grid-column:1 / 3 !important;
+  grid-row:3 !important;
+}
