@@ -426,3 +426,30 @@ input,select{
   grid-template-columns:150px 1fr;
   padding:10px;
 }
+/* Smaller Prize Editor */
+.editor-card{
+    width:95vw !important;
+    max-width:1000px !important;
+    height:90vh !important;
+    overflow-y:auto !important;
+    padding:18px !important;
+}
+
+.editor-card h2{
+    font-size:20px !important;
+    margin-bottom:10px !important;
+}
+
+.editor-card input,
+.editor-card select{
+    padding:8px !important;
+    font-size:15px !important;
+}
+
+.editor-card button{
+    padding:8px 12px !important;
+}
+
+.prize-row{
+    margin-bottom:10px !important;
+}
