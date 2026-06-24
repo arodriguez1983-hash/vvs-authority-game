@@ -13,6 +13,7 @@ let settings = loadSettings();
 let game = loadGame();
 let adminUnlocked = false;
 let adminMode = false;
+let hideTakenMode = false;
 
 function loadSettings() {
   try {
@@ -169,6 +170,9 @@ function renderBoard() {
   board.innerHTML = "";
   game.prizes.forEach((prize, idx) => {
     const spot = idx + 1;
+
+	if (hideTakenMode && game.taken[spot]) return;
+
     const div = document.createElement("div");
     div.className = "spot";
     div.textContent = spot;
@@ -329,6 +333,14 @@ document.getElementById("loginBtn").onclick = () => {
 };
 document.getElementById("audienceBtn").onclick = () => { adminMode = false; document.body.classList.remove("obs"); render(); };
 document.getElementById("obsBtn").onclick = () => { adminMode = false; document.body.classList.add("obs"); render(); };
+document.getElementById("hideTakenBtn").onclick = () => {
+  hideTakenMode = !hideTakenMode;
+
+  document.getElementById("hideTakenBtn").textContent =
+      hideTakenMode ? "Show All" : "Hide Taken";
+
+  render();
+};
 document.getElementById("randomBtn").onclick = randomSpot;
 document.getElementById("undoBtn").onclick = undoLast;
 document.getElementById("exportBtn").onclick = exportHistory;
