@@ -845,7 +845,7 @@ header{
 }
 
 .bottom-panels{
-  grid-column:1 / 3 !important;
+  grid-column:2 / 3 !important;
   grid-row:3 !important;
   display:grid !important;
   grid-template-columns:1fr 1fr 1fr !important;
