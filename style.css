@@ -890,3 +890,45 @@ header{
 .stats div{
   height:95px !important;
 }
+/* Final right-side board fit */
+.main{
+  grid-template-columns:160px 1fr !important;
+  grid-template-rows:64px 520px 120px !important;
+  gap:8px !important;
+  padding:6px 10px !important;
+}
+
+header{
+  height:64px !important;
+  padding:5px 10px !important;
+}
+
+h1{
+  font-size:28px !important;
+}
+
+.stats div{
+  height:78px !important;
+}
+
+.stats b{
+  font-size:25px !important;
+}
+
+.board{
+  align-self:start !important;
+}
+
+.spot{
+  height:49px !important;
+  aspect-ratio:auto !important;
+  font-size:15px !important;
+}
+
+.bottom-panels{
+  margin-top:4px !important;
+}
+
+.panel{
+  height:115px !important;
+}
