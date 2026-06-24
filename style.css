@@ -436,7 +436,7 @@ input,select{
 }
 
 .editor-card h2{
-    font-size:14px !important;
+    font-size:20px !important;
     margin-bottom:10px !important;
 }
 
@@ -451,5 +451,35 @@ input,select{
 }
 
 .prize-row{
+    margin-bottom:10px !important;
+}
+/* Compact Prize Editor */
+.editor-card{
+    width:95vw !important;
+    height:90vh !important;
+    overflow-y:auto !important;
+}
+
+.prize-row{
+    display:grid !important;
+    grid-template-columns:4fr 1fr 1fr 1fr auto !important;
+    gap:8px !important;
+    align-items:center !important;
+    margin-bottom:8px !important;
+}
+
+.prize-row input,
+.prize-row select{
+    margin:0 !important;
+    height:40px !important;
+}
+
+.prize-row button{
+    width:40px !important;
+    height:40px !important;
+    padding:0 !important;
+}
+
+.editor-card h2{
     margin-bottom:10px !important;
 }
