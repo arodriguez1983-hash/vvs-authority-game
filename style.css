@@ -825,44 +825,58 @@ header{
 .panel{
     height:115px !important;
 }
-/* Fix board overlap and fit */
+/* Final fit with board on right */
 .main{
-  grid-template-columns:180px 1fr !important;
-  grid-template-rows:70px 535px 110px !important;
-  gap:8px !important;
-  padding:8px !important;
+  grid-template-columns:165px 1fr !important;
+  grid-template-rows:60px 470px 120px !important;
+  gap:6px !important;
+  padding:6px 8px !important;
   overflow:hidden !important;
 }
 
 header{
   grid-column:1 / 3 !important;
   grid-row:1 !important;
+  height:60px !important;
+  padding:4px 10px !important;
+}
+
+h1{
+  font-size:26px !important;
 }
 
 .stats{
   grid-column:1 / 2 !important;
   grid-row:2 !important;
-  display:grid !important;
-  grid-template-columns:1fr !important;
-  gap:8px !important;
-  margin:0 !important;
+  gap:6px !important;
+}
+
+.stats div{
+  height:78px !important;
+}
+
+.stats b{
+  font-size:24px !important;
 }
 
 .board{
   grid-column:2 / 3 !important;
   grid-row:2 !important;
-  width:100% !important;
-  margin:0 !important;
-  transform:none !important;
+  gap:3px !important;
 }
 
 .spot{
-  height:49px !important;
+  height:43px !important;
   aspect-ratio:auto !important;
-  font-size:15px !important;
+  font-size:14px !important;
 }
 
 .bottom-panels{
   grid-column:1 / 3 !important;
   grid-row:3 !important;
+  margin-top:0 !important;
+}
+
+.panel{
+  height:110px !important;
 }
