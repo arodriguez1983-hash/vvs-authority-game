@@ -242,7 +242,7 @@ button{
   background:var(--panel);
   padding:8px;
   height:120px;
-  overflow:auto;
+  overflow:hidden;
 }
 
 .panel h2{
