@@ -483,6 +483,7 @@ input,select{
 .editor-card h2{
     margin-bottom:10px !important;
 }
+
 /* PHONE LAYOUT ONLY */
 @media (max-width:768px){
 
