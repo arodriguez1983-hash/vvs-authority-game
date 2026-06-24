@@ -833,7 +833,7 @@ header{
 }
 
 .spot{
-  aspect-ratio:1.75 / 1 !important;
+  aspect-ratio:2 / 1 !important;
   min-height:0 !important;
   height:auto !important;
   padding:0 !important;
